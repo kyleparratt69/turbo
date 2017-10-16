@@ -1,0 +1,52 @@
+.outerUl {
+  text-align: center;
+  margin: auto;
+  position: relative;
+}
+
+.innerUl {
+  width: 30%;
+  margin: auto;
+  justify-content: center;
+}
+
+#myNavbar {
+  display: flex !important;
+  border-top: none;
+  box-shadow: none;
+
+}
+
+.activeUl {
+  margin: auto !important;
+  position: relative;
+}
+
+.page-scroll-header {
+  background-color: black;
+  padding-top: 10px;
+  transition: all .4s;
+  margin-top: 0;
+}
+
+.page-header {
+  background-color: transparent;
+  padding-top: 10px;
+  transition: all .4s;
+  margin-top: 0;
+}
+
+.collapse-menu {
+  background-color: transparent;
+  border-color: rgba(255,255,255,.75);;
+}
+
+.collapse-menu-span {
+  background-color: rgba(255,255,255,.75);;
+  color: rgba(255,255,255,.75);;
+  border-color: rgba(255,255,255,.75);;
+}
+
+.linkItem {
+  color: rgba(255,255,255,.75);;
+}
