@@ -1,0 +1,41 @@
+.dropdownButtons {
+  height: 50px !important;
+  width: 220px;
+  border-radius: 3px;
+
+}
+
+.searchDropdowns {
+  display: inline-block;
+  padding-top: 20px;
+}
+
+.searchbarOuter {
+  width: 100%;
+  background-color: #286090;
+  box-shadow: 1px 1px 5px black;
+  padding: 3px;
+}
+
+.searchbarInput {
+  border: none;
+  height: 35px;
+  position: relative;
+  padding: 10px;
+  margin: 8px;
+  border-radius: 5px;
+  width: 60%;
+}
+
+.searchinputs {
+  display: inline-block;
+  padding-top: 20px;
+}
+
+.serachSearcBtn {
+  width: 30%;
+}
+
+.serachClearBtn {
+  margin-left: 10px;
+}

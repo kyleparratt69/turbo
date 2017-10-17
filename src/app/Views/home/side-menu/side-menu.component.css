@@ -2,3 +2,29 @@
   height: 100%;
   position: relative;
 }
+
+.categoryItem {
+  transition: all .4s;
+  border-color: #286090;
+}
+
+.categoryItem:hover {
+  background-color: #286090;
+  border-color: #286090;
+}
+
+.categoryItem:active {
+  background-color: #286090;
+  border-color: #286090;
+}
+
+.sideMenuContainerHeader {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 40px;
+}
+
+.sideMenuContainerText {
+  font-size: 16px;
+  line-height: 25px;
+}
