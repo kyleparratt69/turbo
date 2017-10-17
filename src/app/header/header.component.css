@@ -14,7 +14,6 @@
   display: flex !important;
   border-top: none;
   box-shadow: none;
-
 }
 
 .activeUl {
@@ -30,7 +29,8 @@
 }
 
 .page-header {
-  background-color: transparent;
+  background-color: #286090;
+  box-shadow: 1px 1px 15px black;
   padding-top: 10px;
   transition: all .4s;
   margin-top: 0;
@@ -48,5 +48,12 @@
 }
 
 .linkItem {
-  color: rgba(255,255,255,.75);;
+  color: rgba(255,255,255,.75);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.linkItem:hover {
+  color: rgba(255, 60, 90, 0.75);
+  background-color: transparent;
 }
