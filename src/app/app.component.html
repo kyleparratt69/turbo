@@ -1,2 +1,14 @@
-<app-header></app-header>
-<app-home></app-home>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<div content="user-scalable=no" class="page-wrapper">
+        <div class="sticky-header">
+                <app-header></app-header>        	
+        </div>
+        <div class="content-wrapper">                       
+                <div class="content">
+                        <router-outlet></router-outlet>        
+                </div>
+                <div class="footer">
+                        <app-footer></app-footer>
+                </div>
+        </div>
+</div>

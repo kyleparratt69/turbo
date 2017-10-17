@@ -1,8 +1,19 @@
-.footer {
-  height: 70px;
-  width: 100%;
-  margin: auto;
-  bottom: 0;
-  position: absolute;
+footer.fixed-bottom {
+  margin-top: 20px;
+  min-height: 50px;
   background-color: #286090;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+footer{
+  min-height: 50px;
+  background-color: #286090;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+p{
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  vertical-align: middle;
 }

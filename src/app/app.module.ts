@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import {Component, Directive, NgModule, Pipe} from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppRoutingModule } from './modules/app-routing.module';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './views/home/home.component';
@@ -26,6 +27,7 @@ import { FooterComponent } from './footer/footer.component';
     FooterComponent,
   ],
   imports: [
+    AppRoutingModule,
     BrowserModule,
     BsDropdownModule.forRoot(),
     BrowserAnimationsModule,
