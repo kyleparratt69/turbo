@@ -1,0 +1,15 @@
+.contentGridRow {
+  width: 100%;
+  height: 300px;
+  background-color: transparent;
+}
+
+.contentGrid {
+
+  margin-left: 12px;
+  height: auto;
+}
+
+.panelForm {
+
+}
