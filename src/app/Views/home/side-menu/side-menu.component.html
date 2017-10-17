@@ -1,0 +1,23 @@
+<div class="sideMenuContainer">
+  <div class="sideMenuAnecdote">
+    <h3>SO WHY US?</h3>
+    <p>
+      Using web templates you can create a web site of your own with an extremely low budget
+      and within a short time.
+      <br><br>
+      All templates are available for <b>immediate download.</b> All source files are supplied with
+      these templates so that they can be modified to suit your individual needs.
+      <br><br><br>
+    </p>
+  </div>
+  <div class="sideMenuCategories">
+    <h3>Categories:</h3>
+    <br>
+    <div class="list-group">
+      <a class="list-group-item" *ngFor="let categoryName of categoryArray">
+        <h4 class="list-group-item-heading">{{categoryName}}</h4>
+      </a>
+    </div>
+  </div>
+</div>
+
