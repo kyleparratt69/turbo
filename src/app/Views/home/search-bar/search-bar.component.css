@@ -1,8 +1,8 @@
 .dropdownButtons {
   height: 50px !important;
-  width: 220px;
+  width: 160px;
   border-radius: 3px;
-
+  margin-top: 10px;
 }
 
 .searchDropdowns {
@@ -38,4 +38,10 @@
 
 .serachClearBtn {
   margin-left: 10px;
+}
+
+.searchDiv {
+  border-radius: 10px;
+  background-color: #ffffff;
+  width: 60%;
 }
