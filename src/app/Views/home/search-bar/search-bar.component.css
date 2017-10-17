@@ -3,6 +3,7 @@
   width: 160px;
   border-radius: 3px;
   margin-top: 10px;
+  color: rgba(255,255,255,.75);
 }
 
 .searchDropdowns {
@@ -34,10 +35,26 @@
 
 .serachSearcBtn {
   width: 30%;
+  transition: all .3s;
+  border: none;
+  color: rgba(255,255,255,.75);
 }
 
 .serachClearBtn {
   margin-left: 10px;
+  transition: all .3s;
+  border: none;
+  color: rgba(255,255,255,.75);
+}
+
+.serachSearcBtn:hover {
+  box-shadow: 2px 2px 8px black;
+  border: none;
+}
+
+.serachClearBtn:hover {
+  box-shadow: 2px 2px 8px black;
+  border: none;
 }
 
 .searchDiv {

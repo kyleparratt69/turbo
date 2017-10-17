@@ -28,9 +28,15 @@
   float: left;
   margin-left: 20px;
   position: relative;
+  color: rgba(255,255,255,.75);
 }
 
 .controllerDropdown {
   padding: 12px;
   position: relative;
+  color: rgba(255,255,255,.75);
+}
+
+.dropdownButtons {
+  color: rgba(255,255,255,.75);
 }
