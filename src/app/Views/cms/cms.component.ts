@@ -8,6 +8,7 @@ import {FirbaseDbService} from "../../services/firbase-db.service";
   providers:[FirbaseDbService]
 })
 export class CmsComponent implements OnInit {
+  User_Logged_In: boolean = false;
   @ViewChild('input_Password') inputPassword: ElementRef;
   @ViewChild('input_Username') inputUsernamme: ElementRef;
 
@@ -19,9 +20,7 @@ export class CmsComponent implements OnInit {
   cmsLogin(){
     if(this.cms_Login_Servcie.cms_Login(this.inputPassword.nativeElement.value,
       this.inputUsernamme.nativeElement.value)){
-      alert('success');
-    } else {
-      alert('failed');
+      this.User_Logged_In = true;
     }
   }
 }

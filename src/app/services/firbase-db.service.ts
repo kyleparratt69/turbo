@@ -27,14 +27,6 @@ export class FirbaseDbService {
       "PaymentMethod": payment_Record.PaymentMethod, "PaymentTimestamp": payment_Record.PaymentTimestamp});
   }
 
-  public fetch_Payment_Records(): FirebaseListObservable<any[]> {
-    return this.payments_Array;
-  }
-
-  public fetch_Template_Records(): FirebaseListObservable<any[]> {
-    return this.template_Array;
-  }
-
   public log_Template_Record(template_Record: TemplateObjectModelModel){
     const template_Object = this.firebase_Connection_Instance.database.ref(`/${this.template_Path}/${UUID.UUID()}`);
     template_Object.set({"TemplatePrice": template_Record.TemplatePrice,
@@ -55,4 +47,13 @@ export class FirbaseDbService {
     });
     return Cms_Grant_Access;
   }
+
+  public fetch_Payment_Records(): FirebaseListObservable<any[]> {
+    return this.payments_Array;
+  }
+
+  public fetch_Template_Records(): FirebaseListObservable<any[]> {
+    return this.template_Array;
+  }
+
 }

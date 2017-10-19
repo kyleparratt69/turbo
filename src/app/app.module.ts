@@ -17,6 +17,7 @@ import {AngularFireDatabaseModule} from "angularfire2/database-deprecated";
 import {AngularFireModule} from "angularfire2";
 import {environment} from "../environments/environment";
 import { CmsComponent } from './views/cms/cms.component';
+import { AddTemplateComponent } from './views/cms/add-template/add-template.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { CmsComponent } from './views/cms/cms.component';
     ContentPanelComponent,
     FooterComponent,
     CmsComponent,
+    AddTemplateComponent,
   ],
   imports: [
     AppRoutingModule,
