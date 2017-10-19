@@ -13,6 +13,10 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { ContentGridComponent } from './views/home/content-grid/content-grid.component';
 import { ContentPanelComponent } from './views/home/content-grid/content-panel/content-panel.component';
 import { FooterComponent } from './footer/footer.component';
+import {AngularFireDatabaseModule} from "angularfire2/database-deprecated";
+import {AngularFireModule} from "angularfire2";
+import {environment} from "../environments/environment";
+import { CmsComponent } from './views/cms/cms.component';
 
 @NgModule({
   declarations: [
@@ -25,12 +29,15 @@ import { FooterComponent } from './footer/footer.component';
     ContentGridComponent,
     ContentPanelComponent,
     FooterComponent,
+    CmsComponent,
   ],
   imports: [
     AppRoutingModule,
     BrowserModule,
     BsDropdownModule.forRoot(),
     BrowserAnimationsModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]
