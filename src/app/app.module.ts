@@ -16,11 +16,13 @@ import { FooterComponent } from './footer/footer.component';
 import {AngularFireDatabaseModule} from "angularfire2/database-deprecated";
 import {AngularFireModule} from "angularfire2";
 import {environment} from "../environments/environment";
-import { CmsComponent } from './views/cms/cms.component';
+import { CmswebComponent } from './Views/cms/cmsweb.component';
 import { AddTemplateComponent } from './views/cms/add-template/add-template.component';
+import { BlogTemplateComponent } from './views/cms/blog-template/blog-template.component';
 
 @NgModule({
   declarations: [
+    CmswebComponent,
     AppComponent,
     HomeComponent,
     HeaderComponent,
@@ -30,8 +32,8 @@ import { AddTemplateComponent } from './views/cms/add-template/add-template.comp
     ContentGridComponent,
     ContentPanelComponent,
     FooterComponent,
-    CmsComponent,
     AddTemplateComponent,
+    BlogTemplateComponent,
   ],
   imports: [
     AppRoutingModule,

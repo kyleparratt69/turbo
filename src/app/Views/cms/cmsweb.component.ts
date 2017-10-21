@@ -3,11 +3,11 @@ import {FirbaseDbService} from "../../services/firbase-db.service";
 
 @Component({
   selector: 'app-cms',
-  templateUrl: './cms.component.html',
+  templateUrl: './cmsweb.component.html',
   styleUrls: ['./cms.component.css'],
   providers:[FirbaseDbService]
 })
-export class CmsComponent implements OnInit {
+export class CmswebComponent implements OnInit {
   User_Logged_In: boolean = false;
   @ViewChild('input_Password') inputPassword: ElementRef;
   @ViewChild('input_Username') inputUsernamme: ElementRef;

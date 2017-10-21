@@ -1,13 +1,15 @@
 <div *ngIf="!User_Logged_In">
   <h1>Turbo CMS Login</h1>
   <br><br>
-  <input placeholder="Username" #input_Username>
-  <input placeholder="Password>" #input_Password>
+  <input placeholder="Username" value="admin"#input_Username>
+  <input placeholder="Password>" value="1234" #input_Password>
   <br>
   <br>
   <button (click)="cmsLogin()">Login</button>
 </div>
 <div *ngIf="User_Logged_In">
   <app-add-template></app-add-template>
+  <br><br>
+  <br><br>
+  <app-blog-template></app-blog-template>
 </div>
-

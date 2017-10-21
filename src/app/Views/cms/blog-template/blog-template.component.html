@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row"  style="display: grid">
+    <h1>Add a BlogPost!</h1>
+    <br><br>
+    <input placeholder="Heading" #inputHeading>
+    <input placeholder="Author" #inputAuthor>
+    <input placeholder="Hero Image Url" #inputImage>
+    <br>
+    <textarea  rows="15" cols="50" #inputContent></textarea>
+    <br><br>
+    <button (click)="onBlogSubmit()">Submit Blog</button>
+  </div>
+</div>

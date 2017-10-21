@@ -1,9 +1,15 @@
-<h3>Add New Website Template</h3>
-<br><br>
-<input placeholder="Name" #inputName>
-<input placeholder="Price" #inputPrice>
-<input placeholder="Description" #inputDescription>
-<input placeholder="Thumbnail Image Url" #inputThumbnail>
-<input placeholder="Preview Image Url" #inputPreview>
-<br>
-<button (click)="onAddTemplate()" >Add Template</button>
+<div class="container">
+  <div class="row"  style="display: grid">
+    <h3>Add New Website Template</h3>
+    <br><br>
+    <input placeholder="Name" #inputName>
+    <input placeholder="Price" #inputPrice>
+    <br>
+    <textarea  rows="15" cols="50" #inputDescription></textarea>
+    <br>
+    <input placeholder="Thumbnail Image Url" #inputThumbnail>
+    <input placeholder="Preview Image Url" #inputPreview>
+    <br>
+    <button (click)="onAddTemplate()" >Add Template</button>
+  </div>
+</div>
