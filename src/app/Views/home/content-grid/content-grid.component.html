@@ -1,40 +1,43 @@
-<!-- Content grid container -->
-<div class="container ">
-
-  <!-- Grid control bar -->
-  <div class="contentGridControl">
-    <h3 class="gridControlHeader">Results</h3>
-
-    <div class="btn-group controllerDropdown" dropdown>
-      <button dropdownToggle type="button" class="btn btn-primary dropdownButtons">
-        Sort By <span class="caret"></span>
-      </button>
-      <ul *dropdownMenu class="dropdown-menu" role="menu">
-        <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
-        <li role="menuitem"><a class="dropdown-item" href="#">Another action</a></li>
-        <li role="menuitem"><a class="dropdown-item" href="#">Something else here</a></li>
-        <li class="divider dropdown-divider"></li>
-        <li role="menuitem"><a class="dropdown-item" href="#">Separated link</a>
-        </li>
-      </ul>
-    </div>
-
+<div class="example-container mat-elevation-z8">
+  
+    <mat-table #table [dataSource]="dataSource">
+  
+      <!--- Note that these columns can be defined in any order.
+            The actual rendered columns are set as a property on the row definition" -->
+  
+      <!-- ID Column -->
+      <ng-container matColumnDef="userId">
+        <mat-header-cell *matHeaderCellDef> ID </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.id}} </mat-cell>
+      </ng-container>
+  
+      <!-- Progress Column -->
+      <ng-container matColumnDef="progress">
+        <mat-header-cell *matHeaderCellDef> Progress </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.progress}}% </mat-cell>
+      </ng-container>
+  
+      <!-- Name Column -->
+      <ng-container matColumnDef="userName">
+        <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.name}} </mat-cell>
+      </ng-container>
+  
+      <!-- Color Column -->
+      <ng-container matColumnDef="color">
+        <mat-header-cell *matHeaderCellDef> Color </mat-header-cell>
+        <mat-cell *matCellDef="let row" [style.color]="row.color"> {{row.color}} </mat-cell>
+      </ng-container>
+  
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </mat-table>
+  
+    <mat-paginator #paginator
+                  [length]="exampleDatabase.data.length"
+                  [pageIndex]="0"
+                  [pageSize]="25"
+                  [pageSizeOptions]="[5, 10, 25, 100]">
+    </mat-paginator>
   </div>
-
-  <!-- Content grid -->
-  <div class="row contentGridRow">
-    <div class="col-md-4 panelForm"><app-content-panel></app-content-panel></div>
-    <div class="col-md-4 panelForm"><app-content-panel></app-content-panel></div>
-    <div class="col-md-4 panelForm"><app-content-panel></app-content-panel></div>
-  </div>
-  <div class="row contentGridRow">
-    <div class="col-md-4 panelForm"><app-content-panel></app-content-panel></div>
-    <div class="col-md-4 panelForm"><app-content-panel></app-content-panel></div>
-    <div class="col-md-4 panelForm"><app-content-panel></app-content-panel></div>
-  </div>
-  <div class="row contentGridRow">
-    <div class="col-md-4 panelForm"><app-content-panel></app-content-panel></div>
-    <div class="col-md-4 panelForm"><app-content-panel></app-content-panel></div>
-    <div class="col-md-4 panelForm"><app-content-panel></app-content-panel></div>
-  </div>
-</div>
+  

@@ -11,7 +11,6 @@ import { SideMenuComponent } from './views/home/side-menu/side-menu.component';
 import { SearchBarComponent } from './views/home/search-bar/search-bar.component';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { ContentGridComponent } from './views/home/content-grid/content-grid.component';
-import { ContentPanelComponent } from './views/home/content-grid/content-panel/content-panel.component';
 import { FooterComponent } from './footer/footer.component';
 import {AngularFireDatabaseModule} from "angularfire2/database-deprecated";
 import {AngularFireModule} from "angularfire2";
@@ -30,7 +29,6 @@ import { BlogTemplateComponent } from './views/cms/blog-template/blog-template.c
     SideMenuComponent,
     SearchBarComponent,
     ContentGridComponent,
-    ContentPanelComponent,
     FooterComponent,
     AddTemplateComponent,
     BlogTemplateComponent,
